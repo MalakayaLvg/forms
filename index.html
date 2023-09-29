@@ -5,26 +5,50 @@
     <title>Exercice Formulaire</title>
 </head>
 <body>
-    <form action="">
-        <label for="lePseudo">Pseudo *</label><input id="lePseudo" name="pseudo">
+    <form method="post" action="" enctype="">
+
+        <label for="lePseudo">Pseudo *</label>
+        <input id="lePseudo" name="pseudo">
 
         <p>
-            <label for="MDP">Mot de passe </label><input id="MDP" name="motDePasse">
+            <label for="MDP">Mot de passe </label>
+            <input id="MDP" name="motDePasse">
             <br>
-            <label for="lePrenom">Prenom </label><input id="lePrenom" name="Prenom" placeholder="votre prenom" >
+
+            <label for="lePrenom">Prenom </label>
+            <input id="lePrenom" name="Prenom" placeholder="votre prenom" >
             <br>
-            <label for="lEmail">Email </label><input id="lEmail" type="email" name="Email">
 
+            <label for="lEmail">Email </label>
+            <input id="lEmail" type="email" name="Email">
+            <br>
 
+            <label for="avatar1">Avatar</label>
+            <input id="avatar1" type="file">
+            <br>
 
+            <label for="pays">Pays </label>
+            <select id="pays" name="pays">
+                <optgroup label="Eurpope">
+                    <option value="fr">France</option>
+                    <option value="it">Italie</option>
+                    <option value="es" selected>Espagne</option>
+                </optgroup>
+            </select>
 
         </p>
         <p>
-            Quel sont vos fruits préférés ? <br>
+            Quel sont vos fruits préférés ?<br>
             <p>
-            <label for="fruitCB"> Orange </label><input id="fruitCB" type="checkbox" name="fruitCB">
-            <label for="fruitCB2"> Fraise </label><input id="fruitCB2" type="checkbox" name="fruitCB">
-            <label for="fruitCB3"> Poire </label><input id="fruitCB3" type="checkbox" name="fruitCB">
+
+                <label for="orange"></label>
+                <input id="orange" type="checkbox" name="orange"> Orange
+                <label for="fraise"></label>
+                <input id="fraise" type="checkbox" name="fraise"> Fraise
+                <label for="poire"></label>
+                <input id="poire" type="checkbox" name="fruit"> Poire
+
+
             </p>
         </p>
         <p>
@@ -35,24 +59,63 @@
             </p>
         </p>
         <p>
-            Ville <input type="text" name="ville"> <br>
-            Code Postal <input type="number" value="codePostale"> <br>
-            Adresse <input type="text" name="adresse"> <br>
+            <label for="ville">Ville</label>
+            <input id="ville" type="text" name="ville">
+            <br>
 
-            Date de naissance <input type="date" name="dateNaissance"><br>
-            Jauge <input type="range" name="jauge"><br>
-            Telephone <input type="tel" name="telephone"><br>
-            Recherche <input type="search" name="recherche"><br>
-            Couleur <input type="color" name="couleur"> <br>
-            Avatar <input type="file" name="avatar"> <br>
-            Nom <input type="text" name="leNom" placeholder="test"><br>
-            <input type="button" value="S'inscrire"> <br>
-            <input type="button" value="S'inscrire autre bouton"> <br>
-            <input type="date" name="date">
-            Votre nom <input type="text" name="nom" placeholder="Bonjour">
-            <input type="submit" value="Envoyer"> <br>
+            <label for="codePostale">Code Postal</label>
+            <input id="codePostale" type="number" value="codePostale">
+            <br>
 
+            <label  for="adresse">Adresse</label>
+            <textarea id="adresse" name="adresse" rows="5" cols="25"></textarea>
+            <br>
 
+            <label for="dNaissance">Date de naissance</label>
+            <input id="dNaissance" type="date" name="dateNaissance">
+            <br>
+
+            <label for="jauge">Jauge</label>
+            <input id="jauge" type="range" name="jauge">
+            <br>
+
+            <label for="telephone">Telephone</label>
+            <input id="telephone" type="tel" name="telephone">
+            <br>
+
+            <label for="recherche">Recherche</label>
+            <input id="recherche" type="search" name="recherche">
+            <br>
+
+            <label for="couleur">Couleur</label>
+            <input id="couleur" type="color" name="couleur">
+            <br>
+
+            <label for="avatar2">Avatar</label>
+            <input id="avatar2" type="file" name="avatar">
+            <br>
+
+            <label for="nom">Nom</label>
+            <input id="nom" type="text" name="leNom" placeholder="test">
+            <br>
+
+            <label  for="incription1"></label>
+            <input id="incription1" type="button" value="S'inscrire">
+            <br>
+
+            <label for="inscription2"></label>
+            <input id="inscription2" type="button" value="S'inscrire autre bouton">
+            <br>
+
+            <label for="date"></label>
+            <input id="date" type="date" name="date">
+
+            <label for="votrenom">Votre nom </label>
+            <input id="votrenom" type="text" name="nom" placeholder="Bonjour">
+
+            <label for="envoyer"></label>
+            <input id="envoyer" type="submit" value="Envoyer">
+            <br>
 
         </p>
     </form>
